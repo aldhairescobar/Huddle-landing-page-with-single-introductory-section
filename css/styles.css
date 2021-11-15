@@ -16,7 +16,7 @@ body {
     background: var(--violet) url(../images/bg-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 38px 40px 40px;
+    padding: 38px 0px 40px;
 }
 
 img {
@@ -47,6 +47,14 @@ p {
     margin-bottom: 1.5rem;
 }
 
+.attribution, 
+.attribution > a {
+    color: rgba(0, 0, 0, 2);
+}
+
+.attribution > a {
+    text-decoration: underline;
+}
 
 /*========
 Buttons 
@@ -58,6 +66,7 @@ Buttons
     padding: 1em 6.2em;
     border-radius: 50px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -78,7 +87,6 @@ Buttons
 /*========
 layout 
 ========= */
-
 header {
     display: flex;
     flex-direction: column;
@@ -90,12 +98,14 @@ header {
     width: 120px;
 }
 
-.main-illustration {
-    margin-bottom: 3.75rem;
+.container {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1280px;
 }
 
-.container {
-    
+.main-illustration {
+    margin-bottom: 3.75rem;
 }
 
 .footer-icons {
@@ -115,4 +125,88 @@ header {
 
 .footer-icon-link {
     display: inline-block;
+}
+
+.title-br {
+    display: none;
+}
+
+@media (min-width: 545px){
+    .main-content {
+        padding: 0 40px;
+    }
+}
+
+
+@media (min-width: 700px){
+
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+    }
+
+    .header-logo{
+        width: 160px;
+    }
+
+    .container-flex, 
+    .container-icons {
+        display: flex;
+    }
+
+    .col-main-img, 
+    .main-content {
+        width: 50%;
+    }
+
+    .main-content {
+        text-align: left;
+        padding: 0;
+        margin-left: 1.5rem;
+        padding-top: .25rem
+    }
+
+    .container-icons {
+        justify-content: flex-end;
+    }
+
+    .footer-icons {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1000px){
+    .btn {
+        font-size: 1rem;
+        padding: 1em 4.12em;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.12rem;
+        line-height: 1.70rem;
+    }
+
+    .col-main-img {
+        width: 55%;
+    }
+
+    .main-content {
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .main-content {
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+    }
+
+    .title-br {
+        display: block;
+    }
 }
