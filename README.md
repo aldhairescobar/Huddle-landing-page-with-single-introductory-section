@@ -8,8 +8,8 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution here](https://www.frontendmentor.io/solutions/huddlelandingpage-mobile-first-html-and-css-S6WfrBsAj)
+- Live Site URL: [Live Site](https://aldhairescobar.github.io/Huddle-landing-page-with-single-introductory-section/)
 
 ### Built with
 
